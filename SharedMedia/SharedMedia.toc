@@ -9,6 +9,6 @@
 ## OptionalDeps: LibStub, LibSharedMedia-3.0
 
 Libs\LibStub.lua
-LibsCallbackHandler-1.0.lua
-Mibs\LibSharedMedia-3.0.lua
+Libs\CallbackHandler-1.0.lua
+Libs\LibSharedMedia-3.0.lua
 SharedMedia.lua
