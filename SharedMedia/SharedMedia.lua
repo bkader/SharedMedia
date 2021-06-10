@@ -28,7 +28,7 @@ LSM:Register(MediaType_BORDER, "Text Panel border", [[Interface\GLUES\COMMON\Tex
 LSM:Register(MediaType_BORDER, "Wood border", [[Interface\AchievementFrame\UI-Achievement-WoodBorder.blp]])
 
 -- ---------
--- FONT (59)
+-- FONT (61)
 -- ---------
 LSM:Register(MediaType_FONT, "Accidental Presidency", [[Interface\Addons\SharedMedia\Media\Fonts\AccidentalPresidency.ttf]])
 LSM:Register(MediaType_FONT, "Adventure", [[Interface\Addons\SharedMedia\Media\Fonts\Adventure.ttf]])
@@ -47,6 +47,7 @@ LSM:Register(MediaType_FONT, "Caesar", [[Interface\AddOns\SharedMedia\Media\Font
 LSM:Register(MediaType_FONT, "Capitalis Type Oasis", [[Interface\AddOns\SharedMedia\Media\Fonts\CapitalisTypeOasis.ttf]])
 LSM:Register(MediaType_FONT, "Celestia Medium Redux", [[Interface\Addons\SharedMedia\Media\Fonts\CelestiaMediumRedux.ttf]])
 LSM:Register(MediaType_FONT, "Collegiate", [[Interface\Addons\SharedMedia\Media\Fonts\Collegiate.ttf]])
+LSM:Register(MediaType_FONT, "Continuum Medium", [[Interface\Addons\SharedMedia\Media\Fonts\ContinuumMedium.ttf]])
 LSM:Register(MediaType_FONT, "DejaVu Sans", [[Interface\Addons\SharedMedia\Media\Fonts\DejaVuLGCSans.ttf]], ruRU + western)
 LSM:Register(MediaType_FONT, "DejaVu Serif", [[Interface\Addons\SharedMedia\Media\Fonts\DejaVuLGCSerif.ttf]], ruRU + western)
 LSM:Register(MediaType_FONT, "Diogenes", [[Interface\Addons\SharedMedia\Media\Fonts\Diogenes.ttf]])
@@ -55,6 +56,7 @@ LSM:Register(MediaType_FONT, "Doris PP", [[Interface\Addons\SharedMedia\Media\Fo
 LSM:Register(MediaType_FONT, "Enigmatic", [[Interface\Addons\SharedMedia\Media\Fonts\Enigmatic.ttf]])
 LSM:Register(MediaType_FONT, "Fitzgerald", [[Interface\Addons\SharedMedia\Media\Fonts\Fitzgerald.ttf]])
 LSM:Register(MediaType_FONT, "Frakturika Spamless", [[Interface\Addons\SharedMedia\Media\Fonts\FrakturikaSpamless.ttf]])
+LSM:Register(MediaType_FONT, "FrancoisOne", [[Interface\Addons\SharedMedia\Media\Fonts\FrancoisOne.ttf]])
 LSM:Register(MediaType_FONT, "Gentium Plus", [[Interface\Addons\SharedMedia\Media\Fonts\GentiumPlus.ttf]], ruRU + western)
 LSM:Register(MediaType_FONT, "Germanica Embossed", [[Interface\AddOns\SharedMedia\Media\Fonts\GermanicaEmbossed.ttf]])
 LSM:Register(MediaType_FONT, "Germanica Fluted", [[Interface\AddOns\SharedMedia\Media\Fonts\GermanicaFluted.ttf]])
