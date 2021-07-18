@@ -93,12 +93,13 @@ LSM:Register(MediaType_FONT, "Yanone Kaffeesatz Regular", [[Interface\Addons\Sha
 LSM:Register(MediaType_FONT, "Yellowjacket", [[Interface\Addons\SharedMedia\Media\Fonts\Yellowjacket.ttf]])
 
 -- --------------
--- STATUSBAR (63)
+-- STATUSBAR (64)
 -- --------------
 LSM:Register(MediaType_STATUSBAR, "Aluminium", [[Interface\Addons\SharedMedia\Media\Statusbar\Aluminium]])
 LSM:Register(MediaType_STATUSBAR, "Armory", [[Interface\Addons\SharedMedia\Media\Statusbar\Armory]])
 LSM:Register(MediaType_STATUSBAR, "BantoBar", [[Interface\Addons\SharedMedia\Media\Statusbar\BantoBar]])
 LSM:Register(MediaType_STATUSBAR, "Bars", [[Interface\Addons\SharedMedia\Media\Statusbar\Bars]])
+LSM:Register(MediaType_STATUSBAR, "Blinkii", [[Interface\Addons\SharedMedia\Media\Statusbar\Blinkii]])
 LSM:Register(MediaType_STATUSBAR, "Bumps", [[Interface\Addons\SharedMedia\Media\Statusbar\Bumps]])
 LSM:Register(MediaType_STATUSBAR, "Button", [[Interface\Addons\SharedMedia\Media\Statusbar\Button]])
 LSM:Register(MediaType_STATUSBAR, "Charcoal", [[Interface\Addons\SharedMedia\Media\Statusbar\Charcoal]])

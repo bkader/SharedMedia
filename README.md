@@ -7,7 +7,7 @@
 | Background |     **05**    |
 | Border     |     **04**    |
 | Font       |     **61**    |
-| Statusbar  |     **63**    |
+| Statusbar  |     **64**    |
 | Sound      |     **11**    |
 
 ## Install
