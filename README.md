@@ -4,11 +4,11 @@
 
 | Media      |      Count    |
 |------------|:-------------:|
-| Background |     **05**    |
-| Border     |     **04**    |
-| Font       |     **61**    |
-| Statusbar  |     **64**    |
-| Sound      |     **11**    |
+| Background |     **07**    |
+| Border     |     **17**    |
+| Font       |     **80**    |
+| Statusbar  |     **101**    |
+| Sound      |     **12**    |
 
 ## Install
 
