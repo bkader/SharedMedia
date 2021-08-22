@@ -1,6 +1,4 @@
-[_dev]*
-[_bak]*
+_dev/*
 *.[zip,rar]
 .luacheckrc
-luacheck.exe
 Makefile

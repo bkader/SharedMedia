@@ -43,7 +43,7 @@ LSM:Register(MediaType_BORDER, "Text Panel border", [[Interface\GLUES\COMMON\Tex
 LSM:Register(MediaType_BORDER, "Wood border", [[Interface\AchievementFrame\UI-Achievement-WoodBorder.blp]])
 
 -- ---------
--- FONT (80)
+-- FONT (83)
 -- ---------
 LSM:Register(MediaType_FONT, "Accidental Presidency", [[Interface\Addons\SharedMedia\Media\Fonts\AccidentalPresidency.ttf]])
 LSM:Register(MediaType_FONT, "Adventure", [[Interface\Addons\SharedMedia\Media\Fonts\Adventure.ttf]])
@@ -54,6 +54,7 @@ LSM:Register(MediaType_FONT, "Arm Wrestler", [[Interface\Addons\SharedMedia\Medi
 LSM:Register(MediaType_FONT, "Augustus", [[Interface\AddOns\SharedMedia\Media\Fonts\Augustus.ttf]])
 LSM:Register(MediaType_FONT, "Aurora", [[Interface\Addons\SharedMedia\Media\Fonts\Aurora.ttf]])
 LSM:Register(MediaType_FONT, "Aurora Extended", [[Interface\Addons\SharedMedia\Media\Fonts\AuroraExtended.ttf]])
+LSM:Register(MediaType_FONT, "AvantGarde LT Medium", [[Interface\Addons\SharedMedia\Media\Fonts\AvantGardeLTMedium.ttf]])
 LSM:Register(MediaType_FONT, "Baar Sophia", [[Interface\Addons\SharedMedia\Media\Fonts\BaarSophia.ttf]])
 LSM:Register(MediaType_FONT, "Bavaria", [[Interface\Addons\SharedMedia\Media\Fonts\Bavaria.ttf]])
 LSM:Register(MediaType_FONT, "Bavaria Extended", [[Interface\Addons\SharedMedia\Media\Fonts\BavariaExtended.ttf]])
@@ -74,6 +75,7 @@ LSM:Register(MediaType_FONT, "Disko", [[Interface\Addons\SharedMedia\Media\Fonts
 LSM:Register(MediaType_FONT, "Doris PP", [[Interface\Addons\SharedMedia\Media\Fonts\DorisPP.ttf]])
 LSM:Register(MediaType_FONT, "Enigmatic", [[Interface\Addons\SharedMedia\Media\Fonts\Enigmatic.ttf]])
 LSM:Register(MediaType_FONT, "Eurasia", [[Interface\Addons\SharedMedia\Media\Fonts\Eurasia.ttf]])
+LSM:Register(MediaType_FONT, "Expressway", [[Interface\Addons\SharedMedia\Media\Fonts\Expressway.ttf]])
 LSM:Register(MediaType_FONT, "Fitzgerald", [[Interface\Addons\SharedMedia\Media\Fonts\Fitzgerald.ttf]])
 LSM:Register(MediaType_FONT, "Frakturika Spamless", [[Interface\Addons\SharedMedia\Media\Fonts\FrakturikaSpamless.ttf]])
 LSM:Register(MediaType_FONT, "FrancoisOne", [[Interface\Addons\SharedMedia\Media\Fonts\FrancoisOne.ttf]])
@@ -86,6 +88,7 @@ LSM:Register(MediaType_FONT, "Germanica Embossed", [[Interface\AddOns\SharedMedi
 LSM:Register(MediaType_FONT, "Germanica Fluted", [[Interface\AddOns\SharedMedia\Media\Fonts\GermanicaFluted.ttf]])
 LSM:Register(MediaType_FONT, "Germanica Shadowed", [[Interface\AddOns\SharedMedia\Media\Fonts\GermanicaShadowed.ttf]])
 LSM:Register(MediaType_FONT, "Germanica", [[Interface\AddOns\SharedMedia\Media\Fonts\Germanica.ttf]])
+LSM:Register(MediaType_FONT, "Gotham Ultra", [[Interface\AddOns\SharedMedia\Media\Fonts\GothamUltra.ttf]])
 LSM:Register(MediaType_FONT, "Gros", [[Interface\Addons\SharedMedia\Media\Fonts\Gros.ttf]])
 LSM:Register(MediaType_FONT, "Gros Extended", [[Interface\Addons\SharedMedia\Media\Fonts\GrosExtended.ttf]])
 LSM:Register(MediaType_FONT, "Hack", [[Interface\Addons\SharedMedia\Media\Fonts\Hack.ttf]])
