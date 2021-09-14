@@ -43,7 +43,7 @@ LSM:Register(MediaType_BORDER, "Text Panel border", [[Interface\GLUES\COMMON\Tex
 LSM:Register(MediaType_BORDER, "Wood border", [[Interface\AchievementFrame\UI-Achievement-WoodBorder.blp]])
 
 -- ---------
--- FONT (83)
+-- FONT (87)
 -- ---------
 LSM:Register(MediaType_FONT, "Accidental Presidency", [[Interface\Addons\SharedMedia\Media\Fonts\AccidentalPresidency.ttf]])
 LSM:Register(MediaType_FONT, "Adventure", [[Interface\Addons\SharedMedia\Media\Fonts\Adventure.ttf]])
@@ -61,6 +61,9 @@ LSM:Register(MediaType_FONT, "Bavaria Extended", [[Interface\Addons\SharedMedia\
 LSM:Register(MediaType_FONT, "Bazooka", [[Interface\Addons\SharedMedia\Media\Fonts\Bazooka.ttf]])
 LSM:Register(MediaType_FONT, "Black Chancery", [[Interface\Addons\SharedMedia\Media\Fonts\BlackChancery.ttf]])
 LSM:Register(MediaType_FONT, "Blazed", [[Interface\Addons\SharedMedia\Media\Fonts\Blazed.ttf]])
+LSM:Register(MediaType_FONT, "Blender Pro", [[Interface\Addons\SharedMedia\Media\Fonts\BlenderPro.ttf]])
+LSM:Register(MediaType_FONT, "Blender Pro Bold", [[Interface\Addons\SharedMedia\Media\Fonts\BlenderProBold.ttf]])
+LSM:Register(MediaType_FONT, "Blender Pro Heavy", [[Interface\Addons\SharedMedia\Media\Fonts\BlenderProHeavy.ttf]])
 LSM:Register(MediaType_FONT, "Boris Black Bloxx Dirty", [[Interface\Addons\SharedMedia\Media\Fonts\BorisBlackBloxxDirty.ttf]])
 LSM:Register(MediaType_FONT, "Boris Black Bloxx", [[Interface\Addons\SharedMedia\Media\Fonts\BorisBlackBloxx.ttf]])
 LSM:Register(MediaType_FONT, "Caesar", [[Interface\AddOns\SharedMedia\Media\Fonts\Caesar.ttf]])
@@ -106,6 +109,7 @@ LSM:Register(MediaType_FONT, "Munica", [[Interface\Addons\SharedMedia\Media\Font
 LSM:Register(MediaType_FONT, "Mystic Orbs", [[Interface\Addons\SharedMedia\Media\Fonts\MysticOrbs.ttf]])
 LSM:Register(MediaType_FONT, "Olde English", [[Interface\AddOns\SharedMedia\Media\Fonts\OldeEnglish.ttf]])
 LSM:Register(MediaType_FONT, "Pokemon Solid", [[Interface\Addons\SharedMedia\Media\Fonts\PokemonSolid.ttf]])
+LSM:Register(MediaType_FONT, "Quicksand", [[Interface\Addons\SharedMedia\Media\Fonts\Quicksand.ttf]])
 LSM:Register(MediaType_FONT, "Rock Show Whiplash", [[Interface\Addons\SharedMedia\Media\Fonts\RockShowWhiplash.ttf]])
 LSM:Register(MediaType_FONT, "Roman SD", [[Interface\AddOns\SharedMedia\Media\Fonts\RomanSD.ttf]])
 LSM:Register(MediaType_FONT, "Romanum Est", [[Interface\AddOns\SharedMedia\Media\Fonts\RomanumEst.ttf]])
