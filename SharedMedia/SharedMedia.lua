@@ -43,8 +43,9 @@ LSM:Register(MediaType_BORDER, "Text Panel border", [[Interface\GLUES\COMMON\Tex
 LSM:Register(MediaType_BORDER, "Wood border", [[Interface\AchievementFrame\UI-Achievement-WoodBorder.blp]])
 
 -- ---------
--- FONT (87)
+-- FONT (90)
 -- ---------
+
 LSM:Register(MediaType_FONT, "Accidental Presidency", [[Interface\Addons\SharedMedia\Media\Fonts\AccidentalPresidency.ttf]])
 LSM:Register(MediaType_FONT, "Adventure", [[Interface\Addons\SharedMedia\Media\Fonts\Adventure.ttf]])
 LSM:Register(MediaType_FONT, "Alba Super", [[Interface\Addons\SharedMedia\Media\Fonts\AlbaSuper.ttf]])
@@ -59,6 +60,7 @@ LSM:Register(MediaType_FONT, "Baar Sophia", [[Interface\Addons\SharedMedia\Media
 LSM:Register(MediaType_FONT, "Bavaria", [[Interface\Addons\SharedMedia\Media\Fonts\Bavaria.ttf]])
 LSM:Register(MediaType_FONT, "Bavaria Extended", [[Interface\Addons\SharedMedia\Media\Fonts\BavariaExtended.ttf]])
 LSM:Register(MediaType_FONT, "Bazooka", [[Interface\Addons\SharedMedia\Media\Fonts\Bazooka.ttf]])
+LSM:Register(MediaType_FONT, "BigNoodleToo", [[Interface\Addons\SharedMedia\Media\Fonts\BigNoodleToo.ttf]])
 LSM:Register(MediaType_FONT, "Black Chancery", [[Interface\Addons\SharedMedia\Media\Fonts\BlackChancery.ttf]])
 LSM:Register(MediaType_FONT, "Blazed", [[Interface\Addons\SharedMedia\Media\Fonts\Blazed.ttf]])
 LSM:Register(MediaType_FONT, "Blender Pro", [[Interface\Addons\SharedMedia\Media\Fonts\BlenderPro.ttf]])
@@ -86,6 +88,7 @@ LSM:Register(MediaType_FONT, "Frucade", [[Interface\Addons\SharedMedia\Media\Fon
 LSM:Register(MediaType_FONT, "Frucade Small", [[Interface\Addons\SharedMedia\Media\Fonts\FrucadeSmall.ttf]])
 LSM:Register(MediaType_FONT, "Frucade Medium", [[Interface\Addons\SharedMedia\Media\Fonts\FrucadeMedium.ttf]])
 LSM:Register(MediaType_FONT, "Frucade Extended", [[Interface\Addons\SharedMedia\Media\Fonts\FrucadeExtended.ttf]])
+LSM:Register(MediaType_FONT, "Futura PT Book", [[Interface\Addons\SharedMedia\Media\Fonts\FuturaPTBook.ttf]])
 LSM:Register(MediaType_FONT, "Gentium Plus", [[Interface\Addons\SharedMedia\Media\Fonts\GentiumPlus.ttf]], ruRU + western)
 LSM:Register(MediaType_FONT, "Germanica Embossed", [[Interface\AddOns\SharedMedia\Media\Fonts\GermanicaEmbossed.ttf]])
 LSM:Register(MediaType_FONT, "Germanica Fluted", [[Interface\AddOns\SharedMedia\Media\Fonts\GermanicaFluted.ttf]])
@@ -122,6 +125,7 @@ LSM:Register(MediaType_FONT, "SF Movie Poster", [[Interface\Addons\SharedMedia\M
 LSM:Register(MediaType_FONT, "SF Wonder Comic", [[Interface\Addons\SharedMedia\Media\Fonts\SFWonderComic.ttf]])
 LSM:Register(MediaType_FONT, "Solange", [[Interface\Addons\SharedMedia\Media\Fonts\Solange.ttf]])
 LSM:Register(MediaType_FONT, "Star Cine", [[Interface\Addons\SharedMedia\Media\Fonts\StarCine.ttf]])
+LSM:Register(MediaType_FONT, "Steelfish Rg", [[Interface\Addons\SharedMedia\Media\Fonts\SteelfishRg.ttf]])
 LSM:Register(MediaType_FONT, "SWF!T", [[Interface\Addons\SharedMedia\Media\Fonts\SWF!T.ttf]])
 LSM:Register(MediaType_FONT, "Trashco", [[Interface\Addons\SharedMedia\Media\Fonts\Trashco.ttf]])
 LSM:Register(MediaType_FONT, "Triatlhon In", [[Interface\AddOns\SharedMedia\Media\Fonts\TriatlhonIn.ttf]])
@@ -134,13 +138,18 @@ LSM:Register(MediaType_FONT, "Yanone Kaffeesatz Regular", [[Interface\Addons\Sha
 LSM:Register(MediaType_FONT, "Yellowjacket", [[Interface\Addons\SharedMedia\Media\Fonts\Yellowjacket.ttf]])
 
 -- --------------
--- STATUSBAR (101)
+-- STATUSBAR (112)
 -- --------------
+
 LSM:Register(MediaType_STATUSBAR, "Aluminium", [[Interface\Addons\SharedMedia\Media\Statusbar\Aluminium]])
 LSM:Register(MediaType_STATUSBAR, "Armory", [[Interface\Addons\SharedMedia\Media\Statusbar\Armory]])
 LSM:Register(MediaType_STATUSBAR, "BantoBar", [[Interface\Addons\SharedMedia\Media\Statusbar\BantoBar]])
 LSM:Register(MediaType_STATUSBAR, "Bars", [[Interface\Addons\SharedMedia\Media\Statusbar\Bars]])
+LSM:Register(MediaType_STATUSBAR, "Bezo", [[Interface\Addons\SharedMedia\Media\Statusbar\Bezo]])
+LSM:Register(MediaType_STATUSBAR, "Bezo Dark", [[Interface\Addons\SharedMedia\Media\Statusbar\Bezo-dark1]])
+LSM:Register(MediaType_STATUSBAR, "Bezo Darker", [[Interface\Addons\SharedMedia\Media\Statusbar\Bezo-dark2]])
 LSM:Register(MediaType_STATUSBAR, "Blinkii", [[Interface\Addons\SharedMedia\Media\Statusbar\Blinkii]])
+LSM:Register(MediaType_STATUSBAR, "BuiOnePixel", [[Interface\Addons\SharedMedia\Media\Statusbar\BuiOnePixel]])
 LSM:Register(MediaType_STATUSBAR, "Bumps", [[Interface\Addons\SharedMedia\Media\Statusbar\Bumps]])
 LSM:Register(MediaType_STATUSBAR, "Button", [[Interface\Addons\SharedMedia\Media\Statusbar\Button]])
 LSM:Register(MediaType_STATUSBAR, "Charcoal", [[Interface\Addons\SharedMedia\Media\Statusbar\Charcoal]])
@@ -232,7 +241,14 @@ LSM:Register(MediaType_STATUSBAR, "Smooth", [[Interface\Addons\SharedMedia\Media
 LSM:Register(MediaType_STATUSBAR, "Smudge", [[Interface\Addons\SharedMedia\Media\Statusbar\Smudge]])
 LSM:Register(MediaType_STATUSBAR, "Steel", [[Interface\Addons\SharedMedia\Media\Statusbar\Steel]])
 LSM:Register(MediaType_STATUSBAR, "Striped", [[Interface\Addons\SharedMedia\Media\Statusbar\Striped]])
+LSM:Register(MediaType_STATUSBAR, "ToxiUI Clean", [[Interface\Addons\SharedMedia\Media\Statusbar\ToxiUI-clean]])
+LSM:Register(MediaType_STATUSBAR, "ToxiUI Dark", [[Interface\Addons\SharedMedia\Media\Statusbar\ToxiUI-dark]])
+LSM:Register(MediaType_STATUSBAR, "ToxiUI Half", [[Interface\Addons\SharedMedia\Media\Statusbar\ToxiUI-half]])
+LSM:Register(MediaType_STATUSBAR, "ToxiUI Tx Left", [[Interface\Addons\SharedMedia\Media\Statusbar\ToxiUI-g1]])
+LSM:Register(MediaType_STATUSBAR, "ToxiUI Tx Mid", [[Interface\Addons\SharedMedia\Media\Statusbar\ToxiUI-grad]])
+LSM:Register(MediaType_STATUSBAR, "ToxiUI Tx Right", [[Interface\Addons\SharedMedia\Media\Statusbar\ToxiUI-g2]])
 LSM:Register(MediaType_STATUSBAR, "Tube", [[Interface\Addons\SharedMedia\Media\Statusbar\Tube]])
+LSM:Register(MediaType_STATUSBAR, "TX WorldState Score", [[Interface\Addons\SharedMedia\Media\Statusbar\TX-WorldState-Score]])
 LSM:Register(MediaType_STATUSBAR, "Water", [[Interface\Addons\SharedMedia\Media\Statusbar\Water]])
 LSM:Register(MediaType_STATUSBAR, "Wglass", [[Interface\Addons\SharedMedia\Media\Statusbar\Wglass]])
 LSM:Register(MediaType_STATUSBAR, "Wisps", [[Interface\Addons\SharedMedia\Media\Statusbar\Wisps]])
