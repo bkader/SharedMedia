@@ -6,9 +6,9 @@
 |------------|:-------------:|
 | Background |     **07**    |
 | Border     |     **17**    |
-| Font       |     **90**    |
+| Font       |     **98**    |
 | Statusbar  |     **112**    |
-| Sound      |     **12**    |
+| Sound      |     **24**    |
 
 ## Install
 
@@ -17,6 +17,8 @@
 3. Extract the single folder `SharedMedia` to `Interface\AddOns`.
 4. Enjoy!
 
-## Show Love & Support
+## Feedback & Support
 
-Though it's not required and I have never asked for it but people keep asking for it, if you want to show some love and support, PayPal donations are most welcome at **bkader[at]email.com**.
+You can report issues on [GitHub](https://github.com/bkader/SharedMedia/issues) or contact/tag me directly on [Discord](https://discord.gg/a8z5CyS3eW).
+
+Although not required, if you'd like to support me and keep the addons I make or backport for free working, **PayPal** or **Paysera** donations are most welcome: **bkader[at]mail.com**.
