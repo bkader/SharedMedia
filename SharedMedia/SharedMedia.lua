@@ -22,8 +22,9 @@ LSM:Register(MediaType_BACKGROUND, "Screen Overlay", [[Interface\Addons\SharedMe
 LSM:Register(MediaType_BACKGROUND, "Smoke", [[Interface\Addons\SharedMedia\Media\Background\Smoke.tga]])
 
 -- ----------
--- BORDER (17)
+-- BORDER (19)
 -- ----------
+
 LSM:Register(MediaType_BORDER, "Ferous 1", [[Interface\Addons\SharedMedia\Media\Border\Ferous1.tga]])
 LSM:Register(MediaType_BORDER, "Ferous 2", [[Interface\Addons\SharedMedia\Media\Border\Ferous2.tga]])
 LSM:Register(MediaType_BORDER, "Ferous 3", [[Interface\Addons\SharedMedia\Media\Border\Ferous3.tga]])
@@ -37,13 +38,15 @@ LSM:Register(MediaType_BORDER, "Ferous 10", [[Interface\Addons\SharedMedia\Media
 LSM:Register(MediaType_BORDER, "Ferous 11", [[Interface\Addons\SharedMedia\Media\Border\Ferous11.tga]])
 LSM:Register(MediaType_BORDER, "Ferous 12", [[Interface\Addons\SharedMedia\Media\Border\Ferous12.tga]])
 LSM:Register(MediaType_BORDER, "Ferous 13", [[Interface\Addons\SharedMedia\Media\Border\Ferous13.tga]])
+LSM:Register(MediaType_BORDER, "Raeli Glow", [[Interface\Addons\SharedMedia\Media\Border\RaeliGlow.tga]])
+LSM:Register(MediaType_BORDER, "Raeli Glow Small", [[Interface\Addons\SharedMedia\Media\Border\RaeliGlowSmall.tga]])
 LSM:Register(MediaType_BORDER, "RothSquare", [[Interface\Addons\SharedMedia\Media\Border\RothSquare.tga]])
 LSM:Register(MediaType_BORDER, "SeerahScalloped", [[Interface\Addons\SharedMedia\Media\Border\SeerahScalloped.blp]])
 LSM:Register(MediaType_BORDER, "Text Panel border", [[Interface\GLUES\COMMON\TextPanel-Border.blp]])
 LSM:Register(MediaType_BORDER, "Wood border", [[Interface\AchievementFrame\UI-Achievement-WoodBorder.blp]])
 
 -- ---------
--- FONT (98)
+-- FONT (99)
 -- ---------
 
 LSM:Register(MediaType_FONT, "Accidental Presidency", [[Interface\Addons\SharedMedia\Media\Fonts\AccidentalPresidency.ttf]])
@@ -133,6 +136,7 @@ LSM:Register(MediaType_FONT, "Star Cine", [[Interface\Addons\SharedMedia\Media\F
 LSM:Register(MediaType_FONT, "Steelfish Rg", [[Interface\Addons\SharedMedia\Media\Fonts\SteelfishRg.ttf]])
 LSM:Register(MediaType_FONT, "SWF!T", [[Interface\Addons\SharedMedia\Media\Fonts\SWF!T.ttf]])
 LSM:Register(MediaType_FONT, "Tellural Alt", [[Interface\Addons\SharedMedia\Media\Fonts\TelluralAlt.ttf]])
+LSM:Register(MediaType_FONT, "TGL", [[Interface\Addons\SharedMedia\Media\Fonts\TGL.ttf]], ruRU + western)
 LSM:Register(MediaType_FONT, "Trashco", [[Interface\Addons\SharedMedia\Media\Fonts\Trashco.ttf]])
 LSM:Register(MediaType_FONT, "TrashHand", [[Interface\Addons\SharedMedia\Media\Fonts\TrashHand.ttf]])
 LSM:Register(MediaType_FONT, "Taurus", [[Interface\Addons\SharedMedia\Media\Fonts\Taurus.ttf]])
@@ -146,7 +150,7 @@ LSM:Register(MediaType_FONT, "Yanone Kaffeesatz Regular", [[Interface\Addons\Sha
 LSM:Register(MediaType_FONT, "Yellowjacket", [[Interface\Addons\SharedMedia\Media\Fonts\Yellowjacket.ttf]])
 
 -- --------------
--- STATUSBAR (112)
+-- STATUSBAR (120)
 -- --------------
 
 LSM:Register(MediaType_STATUSBAR, "Aluminium", [[Interface\Addons\SharedMedia\Media\Statusbar\Aluminium]])
@@ -240,6 +244,12 @@ LSM:Register(MediaType_STATUSBAR, "Outline", [[Interface\Addons\SharedMedia\Medi
 LSM:Register(MediaType_STATUSBAR, "Perl v2", [[Interface\Addons\SharedMedia\Media\Statusbar\Perl2]])
 LSM:Register(MediaType_STATUSBAR, "Perl", [[Interface\Addons\SharedMedia\Media\Statusbar\Perl]])
 LSM:Register(MediaType_STATUSBAR, "Pill", [[Interface\Addons\SharedMedia\Media\Statusbar\Pill]])
+LSM:Register(MediaType_STATUSBAR, "Raeli 1", [[Interface\Addons\SharedMedia\Media\Statusbar\Raeli1.tga]])
+LSM:Register(MediaType_STATUSBAR, "Raeli 2", [[Interface\Addons\SharedMedia\Media\Statusbar\Raeli2.tga]])
+LSM:Register(MediaType_STATUSBAR, "Raeli 3", [[Interface\Addons\SharedMedia\Media\Statusbar\Raeli3.tga]])
+LSM:Register(MediaType_STATUSBAR, "Raeli 4", [[Interface\Addons\SharedMedia\Media\Statusbar\Raeli4.tga]])
+LSM:Register(MediaType_STATUSBAR, "Raeli 5", [[Interface\Addons\SharedMedia\Media\Statusbar\Raeli5.tga]])
+LSM:Register(MediaType_STATUSBAR, "Raeli 6", [[Interface\Addons\SharedMedia\Media\Statusbar\Raeli6.tga]])
 LSM:Register(MediaType_STATUSBAR, "Rain", [[Interface\Addons\SharedMedia\Media\Statusbar\Rain]])
 LSM:Register(MediaType_STATUSBAR, "Rocks", [[Interface\Addons\SharedMedia\Media\Statusbar\Rocks]])
 LSM:Register(MediaType_STATUSBAR, "Round", [[Interface\Addons\SharedMedia\Media\Statusbar\Round]])

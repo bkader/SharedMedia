@@ -5,9 +5,9 @@
 | Media      |      Count    |
 |------------|:-------------:|
 | Background |     **07**    |
-| Border     |     **17**    |
-| Font       |     **98**    |
-| Statusbar  |     **114**    |
+| Border     |     **19**    |
+| Font       |     **99**    |
+| Statusbar  |     **120**    |
 | Sound      |     **24**    |
 
 ## Install
