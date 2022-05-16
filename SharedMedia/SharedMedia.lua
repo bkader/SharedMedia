@@ -45,9 +45,9 @@ LSM:Register(MediaType_BORDER, "SeerahScalloped", [[Interface\Addons\SharedMedia
 LSM:Register(MediaType_BORDER, "Text Panel border", [[Interface\GLUES\COMMON\TextPanel-Border.blp]])
 LSM:Register(MediaType_BORDER, "Wood border", [[Interface\AchievementFrame\UI-Achievement-WoodBorder.blp]])
 
--- ---------
--- FONT (99)
--- ---------
+-- ----------
+-- FONT (101)
+-- ----------
 
 LSM:Register(MediaType_FONT, "Accidental Presidency", [[Interface\Addons\SharedMedia\Media\Fonts\AccidentalPresidency.ttf]])
 LSM:Register(MediaType_FONT, "Adventure", [[Interface\Addons\SharedMedia\Media\Fonts\Adventure.ttf]])
@@ -93,7 +93,9 @@ LSM:Register(MediaType_FONT, "Frucade", [[Interface\Addons\SharedMedia\Media\Fon
 LSM:Register(MediaType_FONT, "Frucade Small", [[Interface\Addons\SharedMedia\Media\Fonts\FrucadeSmall.ttf]])
 LSM:Register(MediaType_FONT, "Frucade Medium", [[Interface\Addons\SharedMedia\Media\Fonts\FrucadeMedium.ttf]])
 LSM:Register(MediaType_FONT, "Frucade Extended", [[Interface\Addons\SharedMedia\Media\Fonts\FrucadeExtended.ttf]])
+LSM:Register(MediaType_FONT, "Futura PT Bold", [[Interface\Addons\SharedMedia\Media\Fonts\FuturaPTBold.ttf]])
 LSM:Register(MediaType_FONT, "Futura PT Book", [[Interface\Addons\SharedMedia\Media\Fonts\FuturaPTBook.ttf]])
+LSM:Register(MediaType_FONT, "Futura PT Medium", [[Interface\Addons\SharedMedia\Media\Fonts\Medium.ttf]])
 LSM:Register(MediaType_FONT, "Gentium Plus", [[Interface\Addons\SharedMedia\Media\Fonts\GentiumPlus.ttf]], ruRU + western)
 LSM:Register(MediaType_FONT, "Germanica Embossed", [[Interface\AddOns\SharedMedia\Media\Fonts\GermanicaEmbossed.ttf]])
 LSM:Register(MediaType_FONT, "Germanica Fluted", [[Interface\AddOns\SharedMedia\Media\Fonts\GermanicaFluted.ttf]])
