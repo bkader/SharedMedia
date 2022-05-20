@@ -46,7 +46,7 @@ LSM:Register(MediaType_BORDER, "Text Panel border", [[Interface\GLUES\COMMON\Tex
 LSM:Register(MediaType_BORDER, "Wood border", [[Interface\AchievementFrame\UI-Achievement-WoodBorder.blp]])
 
 -- ----------
--- FONT (101)
+-- FONT (102)
 -- ----------
 
 LSM:Register(MediaType_FONT, "Accidental Presidency", [[Interface\Addons\SharedMedia\Media\Fonts\AccidentalPresidency.ttf]])
@@ -122,6 +122,7 @@ LSM:Register(MediaType_FONT, "Nueva Std Cond", [[Interface\Addons\SharedMedia\Me
 LSM:Register(MediaType_FONT, "Olde English", [[Interface\AddOns\SharedMedia\Media\Fonts\OldeEnglish.ttf]])
 LSM:Register(MediaType_FONT, "Oswald", [[Interface\Addons\SharedMedia\Media\Fonts\Oswald.ttf]])
 LSM:Register(MediaType_FONT, "Pokemon Solid", [[Interface\Addons\SharedMedia\Media\Fonts\PokemonSolid.ttf]])
+LSM:Register(MediaType_FONT, "Porky", [[Interface\AddOns\SharedMedia\Media\Fonts\Porky.ttf]])
 LSM:Register(MediaType_FONT, "Quicksand", [[Interface\Addons\SharedMedia\Media\Fonts\Quicksand.ttf]])
 LSM:Register(MediaType_FONT, "Rock Show Whiplash", [[Interface\Addons\SharedMedia\Media\Fonts\RockShowWhiplash.ttf]])
 LSM:Register(MediaType_FONT, "Roman SD", [[Interface\AddOns\SharedMedia\Media\Fonts\RomanSD.ttf]])
