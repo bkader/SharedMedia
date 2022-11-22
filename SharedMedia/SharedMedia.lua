@@ -46,7 +46,7 @@ LSM:Register(MediaType_BORDER, "Text Panel border", [[Interface\GLUES\COMMON\Tex
 LSM:Register(MediaType_BORDER, "Wood border", [[Interface\AchievementFrame\UI-Achievement-WoodBorder.blp]])
 
 -- ----------
--- FONT (105)
+-- FONT (106)
 -- ----------
 
 LSM:Register(MediaType_FONT, "Accidental Presidency", [[Interface\AddOns\SharedMedia\Media\Fonts\AccidentalPresidency.ttf]])
@@ -88,6 +88,7 @@ LSM:Register(MediaType_FONT, "Eurasia", [[Interface\AddOns\SharedMedia\Media\Fon
 LSM:Register(MediaType_FONT, "Exocet Blizzard Light", [[Interface\AddOns\SharedMedia\Media\Fonts\ExocetBlizzardLight.ttf]], ruRU + western)
 LSM:Register(MediaType_FONT, "Exocet Blizzard Medium", [[Interface\AddOns\SharedMedia\Media\Fonts\ExocetBlizzardMedium.ttf]], ruRU + western)
 LSM:Register(MediaType_FONT, "Expressway", [[Interface\AddOns\SharedMedia\Media\Fonts\Expressway.ttf]], ruRU + western)
+LSM:Register(MediaType_FONT, "Fira Mono Medium", [[Interface\AddOns\SharedMedia\Media\Fonts\FiraMonoMedium.ttf]], ruRU + western)
 LSM:Register(MediaType_FONT, "Fitzgerald", [[Interface\AddOns\SharedMedia\Media\Fonts\Fitzgerald.ttf]])
 LSM:Register(MediaType_FONT, "FORCED SQUARE", [[Interface\AddOns\SharedMedia\Media\Fonts\FORCEDSQUARE.ttf]])
 LSM:Register(MediaType_FONT, "Frakturika Spamless", [[Interface\AddOns\SharedMedia\Media\Fonts\FrakturikaSpamless.ttf]])
