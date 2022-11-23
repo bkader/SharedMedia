@@ -46,7 +46,7 @@ LSM:Register(MediaType_BORDER, "Text Panel border", [[Interface\GLUES\COMMON\Tex
 LSM:Register(MediaType_BORDER, "Wood border", [[Interface\AchievementFrame\UI-Achievement-WoodBorder.blp]])
 
 -- ----------
--- FONT (106)
+-- FONT (107)
 -- ----------
 
 LSM:Register(MediaType_FONT, "Accidental Presidency", [[Interface\AddOns\SharedMedia\Media\Fonts\AccidentalPresidency.ttf]])
@@ -59,6 +59,7 @@ LSM:Register(MediaType_FONT, "Augustus", [[Interface\AddOns\SharedMedia\Media\Fo
 LSM:Register(MediaType_FONT, "Aurora", [[Interface\AddOns\SharedMedia\Media\Fonts\Aurora.ttf]])
 LSM:Register(MediaType_FONT, "Aurora Extended", [[Interface\AddOns\SharedMedia\Media\Fonts\AuroraExtended.ttf]])
 LSM:Register(MediaType_FONT, "AvantGarde LT Medium", [[Interface\AddOns\SharedMedia\Media\Fonts\AvantGardeLTMedium.ttf]])
+LSM:Register(MediaType_FONT, "AvantGarde LT Bold", [[Interface\AddOns\SharedMedia\Media\Fonts\AvantGardeLTBold.ttf]])
 LSM:Register(MediaType_FONT, "Avanti", [[Interface\AddOns\SharedMedia\Media\Fonts\Avanti.ttf]], ruRU + western)
 LSM:Register(MediaType_FONT, "Baar Sophia", [[Interface\AddOns\SharedMedia\Media\Fonts\BaarSophia.ttf]])
 LSM:Register(MediaType_FONT, "Bavaria", [[Interface\AddOns\SharedMedia\Media\Fonts\Bavaria.ttf]])
