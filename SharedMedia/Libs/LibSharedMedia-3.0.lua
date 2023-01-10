@@ -1,6 +1,7 @@
+--@curseforge-project-slug: libsharedmedia-3-0@
 --[[
 Name: LibSharedMedia-3.0
-Revision: $Revision: 62 $
+Revision: $Revision: 128 $
 Author: Elkano (elkano@gmx.de)
 Inspired By: SurfaceLib by Haste/Otravi (troeks@gmail.com)
 Website: http://www.wowace.com/projects/libsharedmedia-3-0/
@@ -9,7 +10,7 @@ Dependencies: LibStub, CallbackHandler-1.0
 License: LGPL v2.1
 ]]
 
-local MAJOR, MINOR = "LibSharedMedia-3.0", 3030002 -- 3.3.5 / increase manually on changes
+local MAJOR, MINOR = "LibSharedMedia-3.0", 8020003 -- 8.2.0 v3 / increase manually on changes
 local lib = LibStub:NewLibrary(MAJOR, MINOR)
 
 if not lib then return end
@@ -21,6 +22,8 @@ local type		= _G.type
 
 local band			= _G.bit.band
 local table_sort	= _G.table.sort
+
+local RESTRICTED_FILE_ACCESS = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE -- starting with 8.2, some rules for file access have changed; classic still uses the old way
 
 local locale = GetLocale()
 local locale_is_western
@@ -58,9 +61,13 @@ lib.MediaType.SOUND			= "sound"				-- sound files
 -- BACKGROUND
 if not lib.MediaTable.background then lib.MediaTable.background = {} end
 lib.MediaTable.background["None"]									= [[]]
+lib.MediaTable.background["Blizzard Collections Background"]		= [[Interface\Collections\CollectionsBackgroundTile]]
 lib.MediaTable.background["Blizzard Dialog Background"]				= [[Interface\DialogFrame\UI-DialogBox-Background]]
 lib.MediaTable.background["Blizzard Dialog Background Dark"]		= [[Interface\DialogFrame\UI-DialogBox-Background-Dark]]
 lib.MediaTable.background["Blizzard Dialog Background Gold"]		= [[Interface\DialogFrame\UI-DialogBox-Gold-Background]]
+lib.MediaTable.background["Blizzard Garrison Background"]			= [[Interface\Garrison\GarrisonUIBackground]]
+lib.MediaTable.background["Blizzard Garrison Background 2"]			= [[Interface\Garrison\GarrisonUIBackground2]]
+lib.MediaTable.background["Blizzard Garrison Background 3"]			= [[Interface\Garrison\GarrisonMissionUIInfoBoxBackgroundTile]]
 lib.MediaTable.background["Blizzard Low Health"]					= [[Interface\FullScreenTextures\LowHealth]]
 lib.MediaTable.background["Blizzard Marble"]						= [[Interface\FrameGeneral\UI-Background-Marble]]
 lib.MediaTable.background["Blizzard Out of Control"]				= [[Interface\FullScreenTextures\OutOfControl]]
@@ -86,6 +93,36 @@ lib.DefaultMedia.border = "None"
 -- FONT
 if not lib.MediaTable.font then lib.MediaTable.font = {} end
 local SML_MT_font = lib.MediaTable.font
+--[[
+All font files are currently in all clients, the following table depicts which font supports which charset as of 5.0.4
+Fonts were checked using langcover.pl from DejaVu fonts (http://sourceforge.net/projects/dejavu/) and FontForge (http://fontforge.org/)
+latin means check for: de, en, es, fr, it, pt
+
+file				name							latin	koKR	ruRU	zhCN	zhTW
+2002.ttf			2002							X		X		X		-		-
+2002B.ttf			2002 Bold						X		X		X		-		-
+ARHei.ttf			AR CrystalzcuheiGBK Demibold	X		-		X		X		X
+ARIALN.TTF			Arial Narrow					X		-		X		-		-
+ARKai_C.ttf			AR ZhongkaiGBK Medium (Combat)	X		-		X		X		X
+ARKai_T.ttf			AR ZhongkaiGBK Medium			X		-		X		X		X
+bHEI00M.ttf			AR Heiti2 Medium B5				-		-		-		-		X
+bHEI01B.ttf			AR Heiti2 Bold B5				-		-		-		-		X
+bKAI00M.ttf			AR Kaiti Medium B5				-		-		-		-		X
+bLEI00D.ttf			AR Leisu Demi B5				-		-		-		-		X
+FRIZQT__.TTF		Friz Quadrata TT				X		-		-		-		-
+FRIZQT___CYR.TTF	FrizQuadrataCTT					x		-		X		-		-
+K_Damage.TTF		YDIWingsM						-		X		X		-		-
+K_Pagetext.TTF		MoK								X		X		X		-		-
+MORPHEUS.TTF		Morpheus						X		-		-		-		-
+MORPHEUS_CYR.TTF	Morpheus						X		-		X		-		-
+NIM_____.ttf		Nimrod MT						X		-		X		-		-
+SKURRI.TTF			Skurri							X		-		-		-		-
+SKURRI_CYR.TTF		Skurri							X		-		X		-		-
+
+WARNING: Although FRIZQT___CYR is available on western clients, it doesn't support special European characters e.g. é, ï, ö
+Due to this, we cannot use it as a replacement for FRIZQT__.TTF
+]]
+
 if locale == "koKR" then
 	LOCALE_MASK = lib.LOCALE_BIT_koKR
 --
@@ -99,9 +136,9 @@ if locale == "koKR" then
 elseif locale == "zhCN" then
 	LOCALE_MASK = lib.LOCALE_BIT_zhCN
 --
-	SML_MT_font["伤害数字"]		= [[Fonts\ZYKai_C.ttf]]
-	SML_MT_font["默认"]			= [[Fonts\ZYKai_T.ttf]]
-	SML_MT_font["聊天"]			= [[Fonts\ZYHei.ttf]]
+	SML_MT_font["伤害数字"]		= [[Fonts\ARKai_C.ttf]]
+	SML_MT_font["默认"]			= [[Fonts\ARKai_T.ttf]]
+	SML_MT_font["聊天"]			= [[Fonts\ARHei.ttf]]
 --
 	lib.DefaultMedia["font"] = "默认" -- someone from zhCN please adjust if needed
 --
@@ -118,22 +155,35 @@ elseif locale == "zhTW" then
 elseif locale == "ruRU" then
 	LOCALE_MASK = lib.LOCALE_BIT_ruRU
 --
-	SML_MT_font["Arial Narrow"]			= [[Fonts\ARIALN.TTF]]
-	SML_MT_font["Friz Quadrata TT"]		= [[Fonts\FRIZQT__.TTF]]
-	SML_MT_font["Morpheus"]				= [[Fonts\MORPHEUS.TTF]]
-	SML_MT_font["Nimrod MT"]			= [[Fonts\NIM_____.ttf]]
-	SML_MT_font["Skurri"]				= [[Fonts\SKURRI.TTF]]
+	SML_MT_font["2002"]								= [[Fonts\2002.TTF]]
+	SML_MT_font["2002 Bold"]						= [[Fonts\2002B.TTF]]
+	SML_MT_font["AR CrystalzcuheiGBK Demibold"]		= [[Fonts\ARHei.TTF]]
+	SML_MT_font["AR ZhongkaiGBK Medium (Combat)"]	= [[Fonts\ARKai_C.TTF]]
+	SML_MT_font["AR ZhongkaiGBK Medium"]			= [[Fonts\ARKai_T.TTF]]
+	SML_MT_font["Arial Narrow"]						= [[Fonts\ARIALN.TTF]]
+	SML_MT_font["Friz Quadrata TT"]					= [[Fonts\FRIZQT___CYR.TTF]]
+	SML_MT_font["MoK"]								= [[Fonts\K_Pagetext.TTF]]
+	SML_MT_font["Morpheus"]							= [[Fonts\MORPHEUS_CYR.TTF]]
+	SML_MT_font["Nimrod MT"]						= [[Fonts\NIM_____.ttf]]
+	SML_MT_font["Skurri"]							= [[Fonts\SKURRI_CYR.TTF]]
 --
-	lib.DefaultMedia.font = "Arial Narrow"
+	lib.DefaultMedia.font = "Friz Quadrata TT"
 --
 else
 	LOCALE_MASK = lib.LOCALE_BIT_western
 	locale_is_western = true
 --
+	SML_MT_font["2002"]								= [[Fonts\2002.TTF]]
+	SML_MT_font["2002 Bold"]						= [[Fonts\2002B.TTF]]
+	SML_MT_font["AR CrystalzcuheiGBK Demibold"]		= [[Fonts\ARHei.TTF]]
+	SML_MT_font["AR ZhongkaiGBK Medium (Combat)"]	= [[Fonts\ARKai_C.TTF]]
+	SML_MT_font["AR ZhongkaiGBK Medium"]			= [[Fonts\ARKai_T.TTF]]
 	SML_MT_font["Arial Narrow"]						= [[Fonts\ARIALN.TTF]]
 	SML_MT_font["Friz Quadrata TT"]					= [[Fonts\FRIZQT__.TTF]]
-	SML_MT_font["Morpheus"]							= [[Fonts\MORPHEUS.TTF]]
-	SML_MT_font["Skurri"]							= [[Fonts\SKURRI.TTF]]
+	SML_MT_font["MoK"]								= [[Fonts\K_Pagetext.TTF]]
+	SML_MT_font["Morpheus"]							= [[Fonts\MORPHEUS_CYR.TTF]]
+	SML_MT_font["Nimrod MT"]						= [[Fonts\NIM_____.ttf]]
+	SML_MT_font["Skurri"]							= [[Fonts\SKURRI_CYR.TTF]]
 --
 	lib.DefaultMedia.font = "Friz Quadrata TT"
 --
@@ -143,12 +193,13 @@ end
 if not lib.MediaTable.statusbar then lib.MediaTable.statusbar = {} end
 lib.MediaTable.statusbar["Blizzard"]						= [[Interface\TargetingFrame\UI-StatusBar]]
 lib.MediaTable.statusbar["Blizzard Character Skills Bar"]	= [[Interface\PaperDollInfoFrame\UI-Character-Skills-Bar]]
+lib.MediaTable.statusbar["Blizzard Raid Bar"]				= [[Interface\RaidFrame\Raid-Bar-Hp-Fill]]
 lib.MediaTable.statusbar["Solid"]							= [[Interface\Buttons\WHITE8X8]]
 lib.DefaultMedia.statusbar = "Blizzard"
 
 -- SOUND
 if not lib.MediaTable.sound then lib.MediaTable.sound = {} end
-lib.MediaTable.sound["None"]								= [[Interface\Quiet.ogg]] -- Relies on the fact that PlaySound[File] doesn't error on these values.
+lib.MediaTable.sound["None"]		= RESTRICTED_FILE_ACCESS and 1 or [[Interface\Quiet.ogg]] -- Relies on the fact that PlaySound[File] doesn't error on these values.
 lib.DefaultMedia.sound = "None"
 
 local function rebuildMediaList(mediatype)
@@ -177,10 +228,14 @@ function lib:Register(mediatype, key, data, langmask)
 		-- ignore fonts that aren't flagged as supporting local glyphs on non-western clients
 		return false
 	end
-	if mediatype == lib.MediaType.SOUND and type(data) == "string" then
+	if type(data) == "string" and (mediatype == lib.MediaType.BACKGROUND or mediatype == lib.MediaType.BORDER or mediatype == lib.MediaType.STATUSBAR or mediatype == lib.MediaType.SOUND) then
 		local path = data:lower()
-		if not path:find(".ogg", nil, true) and not path:find(".mp3", nil, true) and not path:find(".wav", nil, true) then
-			-- Only wav, ogg and mp3 are valid sounds.
+		if RESTRICTED_FILE_ACCESS and not path:find("^interface") then
+			-- files accessed via path only allowed from interface folder
+			return false
+		end
+		if mediatype == lib.MediaType.SOUND and not (path:find(".ogg", nil, true) or path:find(".mp3", nil, true)) then
+			-- Only ogg and mp3 are valid sounds.
 			return false
 		end
 	end

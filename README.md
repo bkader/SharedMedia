@@ -1,4 +1,8 @@
-# SharedMedia for WoW
+# SharedMedia for World of Warcraft
+
+Inserts some media into LibSharedMedia's storage. They can then be selected by any addon that supports LibSharedMedia, a lot of them do.
+
+_ALL CREDITS GO TO FILES OWNERS (License files included in the package)_
 
 ## Current Status
 
@@ -12,8 +16,8 @@
 
 ## Install
 
-1. [Download the package.](https://github.com/bkader/SharedMedia/archive/refs/heads/main.zip)
-2. Open the archive, then open the `SharedMedia-main` folder.
+1. [Download the package.](https://github.com/bkader/SharedMedia/archive/refs/heads/retail.zip)
+2. Open the archive, then open the `SharedMedia-retail` folder.
 3. Extract the single folder `SharedMedia` to `Interface\AddOns`.
 4. Enjoy!
 
