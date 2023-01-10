@@ -1,4 +1,8 @@
-# SharedMedia for WoW
+# SharedMedia for World of Warcraft
+
+Inserts some media into LibSharedMedia's storage. They can then be selected by any addon that supports LibSharedMedia, a lot of them do.
+
+_ALL CREDITS GO TO FILES OWNERS (License files included in the package)_
 
 ## Current Status
 
