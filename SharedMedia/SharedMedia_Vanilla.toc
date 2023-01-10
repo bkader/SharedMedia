@@ -2,7 +2,8 @@
 ## Title: SharedMedia
 ## Notes: Inserts some media into LibSharedMedia's storage.
 ## Version: 3.1.1-200
-## Author: Elkano (Extended by Kader)
+## Author: Kader (|cff808080bkader#5341|r)
+## X-Credits: Elkano
 ## X-Category: Miscellaneous
 ## X-Revision: 200
 ## X-Date: 2023-01-10 @ 02:15 AM |cff808080UTC|r
